@@ -1,7 +1,7 @@
 # Estimating the Mass of Jupiter 
 
 ## Introduction 
-An object's mass can be determined by evaluating the gravitational force it exerts on nearby objects and observing how it influences their motion. This relationship can be used to estimate a planet's weight by observing the orbital period and semi-major axis of its moons. In this study, I observed Jupiter's four Galilean moons (Io, Europa, Ganymede, and Callisto) over a period of 18 Days and took snapshots using the Astronomy Student Taylor Robotic Observatory ([ASTRO](https://www.redlands.edu/study/schools-and-centers/college-of-arts-and-sciences/undergraduate-studies/physics/astronomy-student-taylor-robotic-observatory/)) at Univeristy of Redlands. The distances from the center of the moons to the center of Jupiter were collected. From there, I was able to calculate the period and the radius of the moon's orbit. This relationship then allows me to estimate the mass using a linear regression. I measured mass of Jupiter to be $(1.8711 \pm 0.0083) \times 10^{27}$ kg, which was an underestimate to the expected result of $(1.8981 \pm 0.0002) \times 10^{27}$ kg. This underestimate was due to the approximations made when measuring the distance between Jupiter and its moons as well as the assumptions made in the [Theory](#theory). 
+An object's mass can be determined by evaluating the gravitational force it exerts on nearby objects and observing how it influences their motion. This relationship can be used to estimate a planet's weight by observing the orbital period and semi-major axis of its moons. In this study, I observed Jupiter's four Galilean moons (Io, Europa, Ganymede, and Callisto) over a period of 18 Days and took snapshots using the Astronomy Student Taylor Robotic Observatory ([ASTRO](https://www.redlands.edu/study/schools-and-centers/college-of-arts-and-sciences/undergraduate-studies/physics/astronomy-student-taylor-robotic-observatory/)) at the University of Redlands. The distances from the center of the moons to the center of Jupiter were collected. From there, I was able to calculate the period and the radius of the moon's orbit. This relationship then allows me to estimate the mass using a linear regression. I measured the mass of Jupiter to be $(1.8711 \pm 0.0083) \times 10^{27}$ kg, which was an underestimate to the expected result of $(1.8981 \pm 0.0002) \times 10^{27}$ kg. This underestimate was due to the approximations made when measuring the distance between Jupiter and its moons as well as the assumptions made in the [Theory](#theory). 
 
 ## Theory
 To determine the mass of Jupiter by observing the orbits of its four Galilean moons, Kepler's Third Law of planetary motion is used. For this experiment, it was approximated that the moons' orbits around Jupiter are circular (constant Radius) and the moons are only affected by Jupiter's gravity (no external forces). The net force on each of the moons is 
@@ -9,7 +9,7 @@ To determine the mass of Jupiter by observing the orbits of its four Galilean mo
 F_{net}=ma=\frac{mv^2}{R} 
 \tag{1.0}
 \end{equation}
-where $m$ is the mass of the moon and $a$ is the acceleration of the moon. From the assumption of the moon circular orbit, the acceleration can be rewritten as the $\frac{v^2}{R}$, where $v$ is the velocity and $R$ is the orbital radius. From the assumption that the only gravitational force on the moons is Jupiter, the net force can also be written as  
+where $m$ is the mass of the moon and $a$ is the acceleration of the moon. From the assumption of the moon's circular orbit, the acceleration can be rewritten as the $\frac{v^2}{R}$, where $v$ is the velocity and $R$ is the orbital radius. From the assumption that the only gravitational force on the moons is Jupiter, the net force can also be written as  
 \begin{equation} 
 F_{net}=ma=\frac{GmM}{R^2} 
 \tag{1.1}
@@ -19,7 +19,7 @@ where $G$ is the gravitational constant and $M$ is the mass of Jupiter. By setti
 \frac{GM}{R^2} = v^2
 \tag{1.2}
 \end{equation}
-Since, the moons are in circular motion, the velocity can be written as 
+Since the moons are in circular motion, the velocity can be written as 
 \begin{equation} 
 v=\frac{2 \pi R}{T}
 \tag{1.3}
@@ -45,12 +45,12 @@ The uncertainty for the mass of Jupiter was derived by taking the partial deriva
 U_{M}=\frac{4 \pi ^2 U_s}{Gs^2}
 \tag{4.1}
 \end{equation}
-From the photos of Jupiter and the moon, a distance in pixels, $\Delta p_{J-m}$, is measured from the center of the moon to the center of Jupiter. The uncertainty of this distance, $U_{\Delta p_{J-m}}$, was estimated to be 10 pixels. A conversion is need to change the distance from pixels to meters. The angular separation of Jupiter and each of its moons, $\Delta \theta _{J-m}$, is calculated by 
+From the photos of Jupiter and the moon, a distance in pixels, $\Delta p_{J-m}$, is measured from the center of the moon to the center of Jupiter. The uncertainty of this distance, $U_{\Delta p_{J-m}}$, was estimated to be 10 pixels. A conversion is needed to change the distance from pixels to meters. The angular separation of Jupiter and each of its moons, $\Delta \theta _{J-m}$, is calculated by 
 \begin{equation} 
 \Delta \theta _{J-m}=\frac{ \Delta p_{J-m} a_{M}}{p_{M}}
 \tag{5}
 \end{equation}
-where $\Delta p_{J-m}$ is the distance between Jupiter and one of its moons in pixels, $a_{M}$ is Earth's moon's angular diameter ([31 arcmin](https://lco.global/spacebook/sky/using-angles-describe-positions-and-apparent-sizes-objects/#:~:text=The%20angle%20covered%20by%20the,an%20angle%20of%2031%20arcmin.)), and $p_{M}$ is the diameter of Earth's Moon in pixels (Measured later in the experiment). From the angular seperation and the distance from Earth to Jupiter, $R_{E-J}$, an equation for the distance (meters) between Jupiter and its moons is derived 
+where $\Delta p_{J-m}$ is the distance between Jupiter and one of its moons in pixels, $a_{M}$ is Earth's moon's angular diameter ([31 arcmin](https://lco.global/spacebook/sky/using-angles-describe-positions-and-apparent-sizes-objects/#:~:text=The%20angle%20covered%20by%20the,an%20angle%20of%2031%20arcmin.)), and $p_{M}$ is the diameter of Earth's Moon in pixels (Measured later in the experiment). From the angular separation and the distance from Earth to Jupiter, $R_{E-J}$, an equation for the distance (meters) between Jupiter and its moons is derived 
 \begin{equation} 
 X_{m-J} = R_{E-J}\Delta \theta _{J-m}
 \tag{6}
@@ -69,14 +69,14 @@ Over 30 snapshots were taking at different times at night in order to track the 
 </div>
 
 
-After the collection of images of Jupiter and its moons, I used GIMP-2.10 to measure and estimate the distances from the center of Jupiter to the center of each of the moons in pixels. The time at which each photo was taken was noted in Pacific Standard time, PST, and converted to Greenwich Mean Time, GMT. In order to convert the timestamp of each photo to seconds, a point of time needs to be selected as the start. The initial day of data collection, precisely at 0:00:00 GMT, was designated as the reference or 'time zero' in seconds. For the later photos, timestamps were then converted to their respective values in seconds, calculated from this established 'time zero'. The distance between Earth and Jupiter, $R_{E-J}$, was found using JPL’s Horizons system website. The accepted value for Earth’s moon angular diameter, $a_{M}$, is​​ $9.075712 \times 10^{-3}$ radians. The diameter of the Earth’s moon, $p_{M}$, was approximately $411010 \pm 10$ pixels and was estimated using GIMP-2.10. With these values for the Earth’s moon angular diameter and the diameter of Earth’s moon, the angular separation, $\Delta \theta _{J-m}$, was calculated using equation (5) for each data set of distances between Jupiter and one of Jupiter’s moons. Then with these values for angular separation and the values of the distances between Earth and Jupiter, the values for the separation between Jupiter and each of its moons, $X_{m-J}$ was calculated using equation (6). The uncertainty for the distances from the center of jupiter to the center of each of the moons, $U_{\Delta \theta _{J-m}}$, was estimated to be 10 pixels. Then the uncertainty for the separation between Jupiter and each of its moons, $U_{X_{m-J}}$, was calculated using equation (6.1). 
+After the collection of images of Jupiter and its moons, I used GIMP-2.10 to measure and estimate the distances from the center of Jupiter to the center of each of the moons in pixels. The time at which each photo was taken was noted in Pacific Standard Time, PST, and converted to Greenwich Mean Time, GMT. In order to convert the timestamp of each photo to seconds, a point of time needs to be selected as the start. The initial day of data collection, precisely at 0:00:00 GMT, was designated as the reference or 'time zero' in seconds. For the later photos, timestamps were then converted to their respective values in seconds, calculated from this established 'time zero'. The distance between Earth and Jupiter, $R_{E-J}$, was found using JPL’s Horizons system website. The accepted value for Earth’s moon angular diameter, $a_{M}$, is​​ $9.075712 \times 10^{-3}$ radians. The diameter of the Earth’s moon, $p_{M}$, was approximately $411010 \pm 10$ pixels and was estimated using GIMP-2.10. With these values for the Earth’s moon angular diameter and the diameter of Earth’s moon, the angular separation, $\Delta \theta _{J-m}$, was calculated using equation (5) for each data set of distances between Jupiter and one of Jupiter’s moons. Then with these values for angular separation and the values of the distances between Earth and Jupiter, the values for the separation between Jupiter and each of its moons, $X_{m-J}$ was calculated using equation (6). The uncertainty for the distances from the center of Jupiter to the center of each of the moons, $U_{\Delta \theta _{J-m}}$, was estimated to be 10 pixels. Then the uncertainty for the separation between Jupiter and each of its moons, $U_{X_{m-J}}$, was calculated using equation (6.1). 
 
-In order to determine the periodus and the radius of orbit for each moon, the distance of seperation between Jupiter was plotted against the time. Since it is in orbit, a sinusoidal shape is expected when plotting the distances. Therefore, the general fit function used to plot the data was a sinusoidal function,
+In order to determine the period and the radius of orbit for each moon, the distance of separation between Jupiter was plotted against the time. Since it is in orbit, a sinusoidal shape is expected when plotting the distances. Therefore, the general fit function used to plot the data was a sinusoidal function,
 \begin{equation} 
 f(x)= asin(2T(t-t0))+b
 \tag{7}
 \end{equation}
-where $a$ is the amplitude of the sinusoidal wave and represents the radius of the orbit, $T$ is the period of the sinusoidal function and represent the period of orbit, $t$ is the time of which the photo was taken in seconds, $t0$ is the time offset and $b$ is the y-intercept offset. The fit parameters from the fit function were the amplitude, $a$, the period, $T$, the time offset, $t0$, and the y intercept, $b$.
+where $a$ is the amplitude of the sinusoidal wave and represents the radius of the orbit, $T$ is the period of the sinusoidal function and represents the period of orbit, $t$ is the time of which the photo was taken in seconds, $t0$ is the time offset and $b$ is the y-intercept offset. The fit parameters from the fit function were the amplitude, $a$, the period, $T$, the time offset, $t0$, and the y-intercept, $b$.
 
 
 
@@ -238,7 +238,7 @@ pl.show()
     
 
 
-From the plot of the distance between Io and Jupiter against time, seen above, the orbital radius was estimated to be $(4.1634 \pm 0.0695)\times 10^8$ m and the period of the orbit was estimated to be $(1.518 \pm 0.003) \times 10^5$ s. The orbital radius was consistent with the expected values for Io’s orbital radius of $4.22 \times 10^8$ m and the orbital period was a slight overestime of the expected Io’s period of $1.512 \times 10^5$ s.
+From the plot of the distance between Io and Jupiter against time, seen above, the orbital radius was estimated to be $(4.1634 \pm 0.0695)\times 10^8$ m and the period of the orbit was estimated to be $(1.518 \pm 0.003) \times 10^5$ s. The orbital radius was consistent with the expected values for Io’s orbital radius of $4.22 \times 10^8$ m and the orbital period was a slight overestimate of the expected Io’s period of $1.512 \times 10^5$ s.
 
 ## Europa
 
