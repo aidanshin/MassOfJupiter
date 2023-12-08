@@ -5,10 +5,12 @@ An object's mass can be determined by evaluating the gravitational force it exer
 
 ## Theory
 To determine the mass of Jupiter by observing the orbits of its four Galilean moons, Kepler's Third Law of planetary motion is used. For this experiment, it was approximated that the moons' orbits around Jupiter are circular (constant Radius) and the moons are only affected by Jupiter's gravity (no external forces). The net force on each of the moons is 
+
 \begin{equation} 
 F_{net}=ma=\frac{mv^2}{R} 
 \tag{1.0}
 \end{equation}
+
 where $m$ is the mass of the moon and $a$ is the acceleration of the moon. From the assumption of the moon's circular orbit, the acceleration can be rewritten as the $\frac{v^2}{R}$, where $v$ is the velocity and $R$ is the orbital radius. From the assumption that the only gravitational force on the moons is Jupiter, the net force can also be written as  
 \begin{equation} 
 F_{net}=ma=\frac{GmM}{R^2} 
