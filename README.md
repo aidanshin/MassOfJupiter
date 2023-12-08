@@ -1,4 +1,3 @@
-# MassOfJupiter
 # %% [markdown]
 # 
 # # Estimating the Mass of Jupiter 
